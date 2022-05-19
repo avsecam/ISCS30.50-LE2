@@ -1,0 +1,11 @@
+C:\Users\butso\Desktop\School\ISCS3050\ISCS30.50-LE2\obj\Debug\GRP11-Castro-Jocson-LE2.csproj.AssemblyReference.cache
+C:\Users\butso\Desktop\School\ISCS3050\ISCS30.50-LE2\obj\Debug\GRP11_Castro_Jocson_LE2.Form1.resources
+C:\Users\butso\Desktop\School\ISCS3050\ISCS30.50-LE2\obj\Debug\GRP11_Castro_Jocson_LE2.Properties.Resources.resources
+C:\Users\butso\Desktop\School\ISCS3050\ISCS30.50-LE2\obj\Debug\GRP11-Castro-Jocson-LE2.csproj.GenerateResource.cache
+C:\Users\butso\Desktop\School\ISCS3050\ISCS30.50-LE2\obj\Debug\GRP11-Castro-Jocson-LE2.csproj.CoreCompileInputs.cache
+C:\Users\butso\Desktop\School\ISCS3050\ISCS30.50-LE2\bin\Debug\GRP11-Castro-Jocson-LE2.exe.config
+C:\Users\butso\Desktop\School\ISCS3050\ISCS30.50-LE2\bin\Debug\GRP11-Castro-Jocson-LE2.exe
+C:\Users\butso\Desktop\School\ISCS3050\ISCS30.50-LE2\bin\Debug\GRP11-Castro-Jocson-LE2.pdb
+C:\Users\butso\Desktop\School\ISCS3050\ISCS30.50-LE2\obj\Debug\GRP11-Castro-Jocson-LE2.exe
+C:\Users\butso\Desktop\School\ISCS3050\ISCS30.50-LE2\obj\Debug\GRP11-Castro-Jocson-LE2.pdb
+C:\Users\butso\Desktop\School\ISCS3050\ISCS30.50-LE2\obj\Debug\GRP11_Castro_Jocson_LE2.Form2.resources

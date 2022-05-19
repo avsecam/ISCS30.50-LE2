@@ -24,13 +24,122 @@ namespace GRP11_Castro_Jocson_LE2 {
     /// the contents of this method with the code editor.
     /// </summary>
     private void InitializeComponent() {
-      this.components = new System.ComponentModel.Container();
-      this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(800, 450);
-      this.Text = "Form1";
+            this.UsernameLabel = new System.Windows.Forms.Label();
+            this.PasswordLabel = new System.Windows.Forms.Label();
+            this.usernameTextBox = new System.Windows.Forms.TextBox();
+            this.PasswordTextBox = new System.Windows.Forms.TextBox();
+            this.LogInBtn = new System.Windows.Forms.Button();
+            this.ClearBtn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // UsernameLabel
+            // 
+            this.UsernameLabel.AutoSize = true;
+            this.UsernameLabel.Location = new System.Drawing.Point(152, 66);
+            this.UsernameLabel.Name = "UsernameLabel";
+            this.UsernameLabel.Size = new System.Drawing.Size(55, 13);
+            this.UsernameLabel.TabIndex = 0;
+            this.UsernameLabel.Text = "Username";
+            this.UsernameLabel.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // PasswordLabel
+            // 
+            this.PasswordLabel.AutoSize = true;
+            this.PasswordLabel.Location = new System.Drawing.Point(154, 119);
+            this.PasswordLabel.Name = "PasswordLabel";
+            this.PasswordLabel.Size = new System.Drawing.Size(53, 13);
+            this.PasswordLabel.TabIndex = 1;
+            this.PasswordLabel.Text = "Password";
+            // 
+            // usernameTextBox
+            // 
+            this.usernameTextBox.Location = new System.Drawing.Point(102, 82);
+            this.usernameTextBox.Name = "usernameTextBox";
+            this.usernameTextBox.Size = new System.Drawing.Size(163, 20);
+            this.usernameTextBox.TabIndex = 2;
+            this.usernameTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // PasswordTextBox
+            // 
+            this.PasswordTextBox.Location = new System.Drawing.Point(102, 135);
+            this.PasswordTextBox.Name = "PasswordTextBox";
+            this.PasswordTextBox.PasswordChar = '*';
+            this.PasswordTextBox.Size = new System.Drawing.Size(163, 20);
+            this.PasswordTextBox.TabIndex = 3;
+            this.PasswordTextBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // LogInBtn
+            // 
+            this.LogInBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.LogInBtn.Location = new System.Drawing.Point(71, 188);
+            this.LogInBtn.Name = "LogInBtn";
+            this.LogInBtn.Size = new System.Drawing.Size(93, 49);
+            this.LogInBtn.TabIndex = 4;
+            this.LogInBtn.Text = "Log In";
+            this.LogInBtn.UseVisualStyleBackColor = false;
+            this.LogInBtn.Click += new System.EventHandler(this.LogInBtn_Click);
+            // 
+            // ClearBtn
+            // 
+            this.ClearBtn.Location = new System.Drawing.Point(208, 188);
+            this.ClearBtn.Name = "ClearBtn";
+            this.ClearBtn.Size = new System.Drawing.Size(83, 49);
+            this.ClearBtn.TabIndex = 5;
+            this.ClearBtn.Text = "Clear";
+            this.ClearBtn.UseVisualStyleBackColor = true;
+            this.ClearBtn.Click += new System.EventHandler(this.ClearBtn_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(85, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Username: Hello";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(87, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Password: World";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkCyan;
+            this.ClientSize = new System.Drawing.Size(364, 261);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.ClearBtn);
+            this.Controls.Add(this.LogInBtn);
+            this.Controls.Add(this.PasswordTextBox);
+            this.Controls.Add(this.usernameTextBox);
+            this.Controls.Add(this.PasswordLabel);
+            this.Controls.Add(this.UsernameLabel);
+            this.Name = "Form1";
+            this.Text = "Log In Window";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
     }
 
-    #endregion
-  }
+        #endregion
+
+        private System.Windows.Forms.Label UsernameLabel;
+        private System.Windows.Forms.Label PasswordLabel;
+        private System.Windows.Forms.TextBox usernameTextBox;
+        private System.Windows.Forms.TextBox PasswordTextBox;
+        private System.Windows.Forms.Button LogInBtn;
+        private System.Windows.Forms.Button ClearBtn;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+    }
 }
 
