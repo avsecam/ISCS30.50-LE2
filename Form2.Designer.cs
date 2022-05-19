@@ -71,6 +71,7 @@ namespace GRP11_Castro_Jocson_LE2
       this.DeleteBtn.TabIndex = 8;
       this.DeleteBtn.Text = "Delete";
       this.DeleteBtn.UseVisualStyleBackColor = true;
+      this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
       // 
       // UpdateBtn
       // 
@@ -142,6 +143,8 @@ namespace GRP11_Castro_Jocson_LE2
       // 
       // dataGridView1
       // 
+      this.dataGridView1.AllowUserToAddRows = false;
+      this.dataGridView1.AllowUserToDeleteRows = false;
       this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
       this.dataGridView1.Location = new System.Drawing.Point(22, 33);
       this.dataGridView1.MultiSelect = false;

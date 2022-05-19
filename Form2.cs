@@ -44,26 +44,38 @@ namespace GRP11_Castro_Jocson_LE2 {
       NumberOfCasesTextBox.Text = selectedRow.Cells[2].Value.ToString();
     }
 
-    private void UpdateBtn_Click(object sender, EventArgs e) {
-      DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
-      if (!(selectedRow is null)) {
-        recordNumber = int.Parse(RecordNumberTextBox.Text);
-        regionEntry = RegionTextBox.Text;
-        casesNumber = int.Parse(NumberOfCasesTextBox.Text);
-        selectedRow.Cells[0].Value = recordNumber;
-        selectedRow.Cells[1].Value = regionEntry;
-        selectedRow.Cells[2].Value = casesNumber;
-        MessageBox.Show("Update successful", "Record has been successfully updated!", MessageBoxButtons.OK);
-        ClearFields();
-      }
-    }
-
     private void AddBtn_Click(object sender, EventArgs e) {
+      if (RecordNumberTextBox.Text.Length == 0 || RegionTextBox.Text.Length == 0 || NumberOfCasesTextBox.Text.Length == 0) return;
+
       recordNumber = int.Parse(RecordNumberTextBox.Text);
       regionEntry = RegionTextBox.Text;
       casesNumber = int.Parse(NumberOfCasesTextBox.Text);
       tableSource.Rows.Add(recordNumber, regionEntry, casesNumber);
       MessageBox.Show("Add successful", "Record has been successfully added!", MessageBoxButtons.OK);
+      ClearFields();
+    }
+
+    private void UpdateBtn_Click(object sender, EventArgs e) {
+      if (dataGridView1.SelectedRows.Count < 1) return;
+      if (RecordNumberTextBox.Text.Length == 0 || RegionTextBox.Text.Length == 0 || NumberOfCasesTextBox.Text.Length == 0) return;
+
+      DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
+      recordNumber = int.Parse(RecordNumberTextBox.Text);
+      regionEntry = RegionTextBox.Text;
+      casesNumber = int.Parse(NumberOfCasesTextBox.Text);
+      selectedRow.Cells[0].Value = recordNumber;
+      selectedRow.Cells[1].Value = regionEntry;
+      selectedRow.Cells[2].Value = casesNumber;
+      MessageBox.Show("Update successful", "Record has been successfully updated!", MessageBoxButtons.OK);
+      ClearFields();
+    }
+
+    private void DeleteBtn_Click(object sender, EventArgs e) {
+      if (dataGridView1.SelectedRows.Count < 1) return;
+
+      DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
+      dataGridView1.Rows.Remove(selectedRow);
+      MessageBox.Show("Delete successful", "Record has been successfully deleted!", MessageBoxButtons.OK);
       ClearFields();
     }
 
