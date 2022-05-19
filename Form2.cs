@@ -18,10 +18,6 @@ namespace GRP11_Castro_Jocson_LE2 {
       InitializeComponent();
     }
 
-    private void groupBox1_Enter(object sender, EventArgs e) {
-
-    }
-
     private void Form2_Load(object sender, EventArgs e) {
       tableSource.Columns.Add("Record Number", typeof(int));
       tableSource.Columns.Add("Region", typeof(string));
@@ -31,10 +27,6 @@ namespace GRP11_Castro_Jocson_LE2 {
 
       tableSource.Rows.Add(1, "2", 30);
       tableSource.Rows.Add(2, "8", 50);
-    }
-
-    private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e) {
-
     }
 
     private void dataGridView1_MouseDoubleClick(object sender, MouseEventArgs e) {

@@ -61,7 +61,6 @@ namespace GRP11_Castro_Jocson_LE2
       this.groupBox1.TabIndex = 0;
       this.groupBox1.TabStop = false;
       this.groupBox1.Text = "Functionalities";
-      this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
       // 
       // DeleteBtn
       // 
@@ -152,7 +151,6 @@ namespace GRP11_Castro_Jocson_LE2
       this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
       this.dataGridView1.Size = new System.Drawing.Size(418, 382);
       this.dataGridView1.TabIndex = 1;
-      this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
       this.dataGridView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDoubleClick);
       // 
       // Form2
