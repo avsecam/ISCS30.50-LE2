@@ -43,7 +43,7 @@ namespace GRP11_Castro_Jocson_LE2 {
       regionEntry = RegionTextBox.Text;
       casesNumber = int.Parse(NumberOfCasesTextBox.Text);
       tableSource.Rows.Add(recordNumber, regionEntry, casesNumber);
-      MessageBox.Show("Add successful", "Record has been successfully added!", MessageBoxButtons.OK);
+      MessageBox.Show("Record has been successfully added!", "Add successful", MessageBoxButtons.OK);
       ClearFields();
     }
 
@@ -58,7 +58,7 @@ namespace GRP11_Castro_Jocson_LE2 {
       selectedRow.Cells[0].Value = recordNumber;
       selectedRow.Cells[1].Value = regionEntry;
       selectedRow.Cells[2].Value = casesNumber;
-      MessageBox.Show("Update successful", "Record has been successfully updated!", MessageBoxButtons.OK);
+      MessageBox.Show("Record has been successfully updated!", "Update successful", MessageBoxButtons.OK);
       ClearFields();
     }
 
@@ -67,7 +67,7 @@ namespace GRP11_Castro_Jocson_LE2 {
 
       DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
       dataGridView1.Rows.Remove(selectedRow);
-      MessageBox.Show("Delete successful", "Record has been successfully deleted!", MessageBoxButtons.OK);
+      MessageBox.Show("Record has been successfully deleted!", "Delete successful", MessageBoxButtons.OK);
       ClearFields();
     }
 
