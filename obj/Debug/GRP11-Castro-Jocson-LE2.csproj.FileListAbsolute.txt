@@ -9,3 +9,14 @@ C:\Users\butso\Desktop\School\ISCS3050\ISCS30.50-LE2\bin\Debug\GRP11-Castro-Jocs
 C:\Users\butso\Desktop\School\ISCS3050\ISCS30.50-LE2\obj\Debug\GRP11-Castro-Jocson-LE2.exe
 C:\Users\butso\Desktop\School\ISCS3050\ISCS30.50-LE2\obj\Debug\GRP11-Castro-Jocson-LE2.pdb
 C:\Users\butso\Desktop\School\ISCS3050\ISCS30.50-LE2\obj\Debug\GRP11_Castro_Jocson_LE2.Form2.resources
+A:\AAA\SEM8\ISCS30.50\Long Exercise 2 - Windows Forms Application Version of Short Exercise 3\GRP11-Castro-Jocson-LE2\bin\Debug\GRP11-Castro-Jocson-LE2.exe.config
+A:\AAA\SEM8\ISCS30.50\Long Exercise 2 - Windows Forms Application Version of Short Exercise 3\GRP11-Castro-Jocson-LE2\bin\Debug\GRP11-Castro-Jocson-LE2.exe
+A:\AAA\SEM8\ISCS30.50\Long Exercise 2 - Windows Forms Application Version of Short Exercise 3\GRP11-Castro-Jocson-LE2\bin\Debug\GRP11-Castro-Jocson-LE2.pdb
+A:\AAA\SEM8\ISCS30.50\Long Exercise 2 - Windows Forms Application Version of Short Exercise 3\GRP11-Castro-Jocson-LE2\obj\Debug\GRP11-Castro-Jocson-LE2.csprojAssemblyReference.cache
+A:\AAA\SEM8\ISCS30.50\Long Exercise 2 - Windows Forms Application Version of Short Exercise 3\GRP11-Castro-Jocson-LE2\obj\Debug\GRP11_Castro_Jocson_LE2.Form1.resources
+A:\AAA\SEM8\ISCS30.50\Long Exercise 2 - Windows Forms Application Version of Short Exercise 3\GRP11-Castro-Jocson-LE2\obj\Debug\GRP11_Castro_Jocson_LE2.Form2.resources
+A:\AAA\SEM8\ISCS30.50\Long Exercise 2 - Windows Forms Application Version of Short Exercise 3\GRP11-Castro-Jocson-LE2\obj\Debug\GRP11_Castro_Jocson_LE2.Properties.Resources.resources
+A:\AAA\SEM8\ISCS30.50\Long Exercise 2 - Windows Forms Application Version of Short Exercise 3\GRP11-Castro-Jocson-LE2\obj\Debug\GRP11-Castro-Jocson-LE2.csproj.GenerateResource.cache
+A:\AAA\SEM8\ISCS30.50\Long Exercise 2 - Windows Forms Application Version of Short Exercise 3\GRP11-Castro-Jocson-LE2\obj\Debug\GRP11-Castro-Jocson-LE2.csproj.CoreCompileInputs.cache
+A:\AAA\SEM8\ISCS30.50\Long Exercise 2 - Windows Forms Application Version of Short Exercise 3\GRP11-Castro-Jocson-LE2\obj\Debug\GRP11-Castro-Jocson-LE2.exe
+A:\AAA\SEM8\ISCS30.50\Long Exercise 2 - Windows Forms Application Version of Short Exercise 3\GRP11-Castro-Jocson-LE2\obj\Debug\GRP11-Castro-Jocson-LE2.pdb
