@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GRP11_Castro_Jocson_LE2 {
-  public partial class Form2 : Form {
+  public partial class MainWindow : Form {
     String regionEntry;
     int recordNumber, casesNumber;
     DataTable tableSource = new DataTable();
 
-    public Form2() {
+    public MainWindow() {
       InitializeComponent();
     }
 

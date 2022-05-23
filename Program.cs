@@ -13,7 +13,7 @@ namespace GRP11_Castro_Jocson_LE2 {
     static void Main() {
       Application.EnableVisualStyles();
       Application.SetCompatibleTextRenderingDefault(false);
-      Application.Run(new Form1());
+      Application.Run(new LogInForm());
     }
   }
 }

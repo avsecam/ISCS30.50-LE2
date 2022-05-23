@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GRP11_Castro_Jocson_LE2 {
-  public partial class Form1 : Form {
-    public Form1() {
+  public partial class LogInForm : Form {
+    public LogInForm() {
       InitializeComponent();
     }
 
@@ -24,7 +24,7 @@ namespace GRP11_Castro_Jocson_LE2 {
             if (usernameTextBox.Text == "Hello" && PasswordTextBox.Text == "World")
             {
                 MessageBox.Show("Log In Success", "Log In Success", MessageBoxButtons.OK);
-                Form2 mainWindow = new Form2();
+                MainWindow mainWindow = new MainWindow();
                 mainWindow.ShowDialog();
             }
             else if (usernameTextBox.Text != "Hello" || PasswordTextBox.Text == "World")
@@ -52,5 +52,5 @@ namespace GRP11_Castro_Jocson_LE2 {
         {
 
         }
-    }
+  }
 }

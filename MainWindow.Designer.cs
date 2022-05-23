@@ -1,7 +1,7 @@
 ﻿
 namespace GRP11_Castro_Jocson_LE2
 {
-    partial class Form2
+    partial class MainWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -40,6 +40,10 @@ namespace GRP11_Castro_Jocson_LE2
       this.RegionLabel = new System.Windows.Forms.Label();
       this.RecordNumberLabel = new System.Windows.Forms.Label();
       this.dataGridView1 = new System.Windows.Forms.DataGridView();
+      this.UsernameLabel = new System.Windows.Forms.Label();
+      this.UsernameTextBox = new System.Windows.Forms.TextBox();
+      this.CurrentTimeLabel = new System.Windows.Forms.Label();
+      this.CurrentTimeTextBox = new System.Windows.Forms.TextBox();
       this.groupBox1.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
       this.SuspendLayout();
@@ -55,9 +59,9 @@ namespace GRP11_Castro_Jocson_LE2
       this.groupBox1.Controls.Add(this.NumberOfCasesLabel);
       this.groupBox1.Controls.Add(this.RegionLabel);
       this.groupBox1.Controls.Add(this.RecordNumberLabel);
-      this.groupBox1.Location = new System.Drawing.Point(465, 33);
+      this.groupBox1.Location = new System.Drawing.Point(465, 63);
       this.groupBox1.Name = "groupBox1";
-      this.groupBox1.Size = new System.Drawing.Size(304, 382);
+      this.groupBox1.Size = new System.Drawing.Size(304, 352);
       this.groupBox1.TabIndex = 0;
       this.groupBox1.TabStop = false;
       this.groupBox1.Text = "Functionalities";
@@ -101,7 +105,7 @@ namespace GRP11_Castro_Jocson_LE2
       // 
       // RegionTextBox
       // 
-      this.RegionTextBox.Location = new System.Drawing.Point(126, 89);
+      this.RegionTextBox.Location = new System.Drawing.Point(126, 85);
       this.RegionTextBox.Name = "RegionTextBox";
       this.RegionTextBox.Size = new System.Drawing.Size(147, 20);
       this.RegionTextBox.TabIndex = 4;
@@ -125,7 +129,7 @@ namespace GRP11_Castro_Jocson_LE2
       // RegionLabel
       // 
       this.RegionLabel.AutoSize = true;
-      this.RegionLabel.Location = new System.Drawing.Point(29, 92);
+      this.RegionLabel.Location = new System.Drawing.Point(29, 88);
       this.RegionLabel.Name = "RegionLabel";
       this.RegionLabel.Size = new System.Drawing.Size(41, 13);
       this.RegionLabel.TabIndex = 1;
@@ -145,13 +149,45 @@ namespace GRP11_Castro_Jocson_LE2
       this.dataGridView1.AllowUserToAddRows = false;
       this.dataGridView1.AllowUserToDeleteRows = false;
       this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-      this.dataGridView1.Location = new System.Drawing.Point(22, 33);
+      this.dataGridView1.Location = new System.Drawing.Point(22, 63);
       this.dataGridView1.MultiSelect = false;
       this.dataGridView1.Name = "dataGridView1";
       this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-      this.dataGridView1.Size = new System.Drawing.Size(418, 382);
+      this.dataGridView1.Size = new System.Drawing.Size(418, 352);
       this.dataGridView1.TabIndex = 1;
       this.dataGridView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDoubleClick);
+      // 
+      // UsernameLabel
+      // 
+      this.UsernameLabel.AutoSize = true;
+      this.UsernameLabel.Location = new System.Drawing.Point(114, 24);
+      this.UsernameLabel.Name = "UsernameLabel";
+      this.UsernameLabel.Size = new System.Drawing.Size(55, 13);
+      this.UsernameLabel.TabIndex = 0;
+      this.UsernameLabel.Text = "Username";
+      // 
+      // UsernameTextBox
+      // 
+      this.UsernameTextBox.Location = new System.Drawing.Point(211, 21);
+      this.UsernameTextBox.Name = "UsernameTextBox";
+      this.UsernameTextBox.Size = new System.Drawing.Size(147, 20);
+      this.UsernameTextBox.TabIndex = 3;
+      // 
+      // CurrentTimeLabel
+      // 
+      this.CurrentTimeLabel.AutoSize = true;
+      this.CurrentTimeLabel.Location = new System.Drawing.Point(420, 24);
+      this.CurrentTimeLabel.Name = "CurrentTimeLabel";
+      this.CurrentTimeLabel.Size = new System.Drawing.Size(67, 13);
+      this.CurrentTimeLabel.TabIndex = 0;
+      this.CurrentTimeLabel.Text = "Current Time";
+      // 
+      // CurrentTimeTextBox
+      // 
+      this.CurrentTimeTextBox.Location = new System.Drawing.Point(517, 21);
+      this.CurrentTimeTextBox.Name = "CurrentTimeTextBox";
+      this.CurrentTimeTextBox.Size = new System.Drawing.Size(147, 20);
+      this.CurrentTimeTextBox.TabIndex = 3;
       // 
       // Form2
       // 
@@ -162,6 +198,10 @@ namespace GRP11_Castro_Jocson_LE2
       this.ClientSize = new System.Drawing.Size(800, 450);
       this.Controls.Add(this.dataGridView1);
       this.Controls.Add(this.groupBox1);
+      this.Controls.Add(this.CurrentTimeTextBox);
+      this.Controls.Add(this.CurrentTimeLabel);
+      this.Controls.Add(this.UsernameTextBox);
+      this.Controls.Add(this.UsernameLabel);
       this.Name = "Form2";
       this.Text = "Main Window";
       this.Load += new System.EventHandler(this.Form2_Load);
@@ -169,6 +209,7 @@ namespace GRP11_Castro_Jocson_LE2
       this.groupBox1.PerformLayout();
       ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
       this.ResumeLayout(false);
+      this.PerformLayout();
 
         }
 
@@ -185,5 +226,9 @@ namespace GRP11_Castro_Jocson_LE2
         private System.Windows.Forms.Label RegionLabel;
         private System.Windows.Forms.Label RecordNumberLabel;
         private System.Windows.Forms.DataGridView dataGridView1;
-    }
+    private System.Windows.Forms.Label UsernameLabel;
+    private System.Windows.Forms.TextBox UsernameTextBox;
+    private System.Windows.Forms.Label CurrentTimeLabel;
+    private System.Windows.Forms.TextBox CurrentTimeTextBox;
+  }
 }
