@@ -8,5 +8,10 @@ namespace GRP11_Castro_Jocson_LE2 {
   class UserCredentials {
     public string Username { get; set; }
     public string Password { get; set; }
+
+    public UserCredentials(string username, string password) {
+      Username = username;
+      Password = password;
+    }
   }
 }
