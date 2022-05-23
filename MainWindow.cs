@@ -91,7 +91,12 @@ namespace GRP11_Castro_Jocson_LE2 {
       CurrentTimeTextBox.Text = DateTime.Now.ToString("h:mm:ss tt");
     }
 
-    private void ClearFields() {
+        private void aboutProjectBtn_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This program is made by Butch Castro and Jed Jocson. This program is a Covid-19 Case Tally that can be used to track the number of Covid-19 cases per region.", "About the Project", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void ClearFields() {
       RecordNumberTextBox.Clear();
       RegionTextBox.Clear();
       NumberOfCasesTextBox.Clear();
