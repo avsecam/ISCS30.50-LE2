@@ -26,7 +26,7 @@ namespace GRP11_Castro_Jocson_LE2 {
     private void InitializeComponent() {
       this.UsernameLabel = new System.Windows.Forms.Label();
       this.PasswordLabel = new System.Windows.Forms.Label();
-      this.usernameTextBox = new System.Windows.Forms.TextBox();
+      this.UsernameTextBox = new System.Windows.Forms.TextBox();
       this.PasswordTextBox = new System.Windows.Forms.TextBox();
       this.LogInBtn = new System.Windows.Forms.Button();
       this.ClearBtn = new System.Windows.Forms.Button();
@@ -42,7 +42,6 @@ namespace GRP11_Castro_Jocson_LE2 {
       this.UsernameLabel.Size = new System.Drawing.Size(55, 13);
       this.UsernameLabel.TabIndex = 0;
       this.UsernameLabel.Text = "Username";
-      this.UsernameLabel.Click += new System.EventHandler(this.label1_Click);
       // 
       // PasswordLabel
       // 
@@ -53,12 +52,12 @@ namespace GRP11_Castro_Jocson_LE2 {
       this.PasswordLabel.TabIndex = 1;
       this.PasswordLabel.Text = "Password";
       // 
-      // usernameTextBox
+      // UsernameTextBox
       // 
-      this.usernameTextBox.Location = new System.Drawing.Point(102, 82);
-      this.usernameTextBox.Name = "usernameTextBox";
-      this.usernameTextBox.Size = new System.Drawing.Size(163, 20);
-      this.usernameTextBox.TabIndex = 2;
+      this.UsernameTextBox.Location = new System.Drawing.Point(102, 82);
+      this.UsernameTextBox.Name = "UsernameTextBox";
+      this.UsernameTextBox.Size = new System.Drawing.Size(163, 20);
+      this.UsernameTextBox.TabIndex = 2;
       // 
       // PasswordTextBox
       // 
@@ -118,7 +117,7 @@ namespace GRP11_Castro_Jocson_LE2 {
       this.Controls.Add(this.ClearBtn);
       this.Controls.Add(this.LogInBtn);
       this.Controls.Add(this.PasswordTextBox);
-      this.Controls.Add(this.usernameTextBox);
+      this.Controls.Add(this.UsernameTextBox);
       this.Controls.Add(this.PasswordLabel);
       this.Controls.Add(this.UsernameLabel);
       this.Name = "LogInForm";
@@ -132,7 +131,7 @@ namespace GRP11_Castro_Jocson_LE2 {
 
         private System.Windows.Forms.Label UsernameLabel;
         private System.Windows.Forms.Label PasswordLabel;
-        private System.Windows.Forms.TextBox usernameTextBox;
+        private System.Windows.Forms.TextBox UsernameTextBox;
         private System.Windows.Forms.TextBox PasswordTextBox;
         private System.Windows.Forms.Button LogInBtn;
         private System.Windows.Forms.Button ClearBtn;

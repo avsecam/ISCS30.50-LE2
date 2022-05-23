@@ -34,25 +34,27 @@ namespace GRP11_Castro_Jocson_LE2 {
       }
     }
 
-    private void label1_Click(object sender, EventArgs e) {
-
-    }
-
     private void LogInBtn_Click(object sender, EventArgs e) {
-      if (usernameTextBox.Text == "Hello" && PasswordTextBox.Text == "World") {
+      if (isValidUser(UsernameTextBox.Text, PasswordTextBox.Text)) {
         MessageBox.Show("Log In Success", "Log In Success", MessageBoxButtons.OK);
         MainWindow mainWindow = new MainWindow();
+        mainWindow.Username = UsernameTextBox.Text;
         mainWindow.ShowDialog();
-      } else if (usernameTextBox.Text != "Hello" || PasswordTextBox.Text == "World") {
-        MessageBox.Show("Invalid username", "Invalid username", MessageBoxButtons.OK, MessageBoxIcon.Error);
-      } else if (usernameTextBox.Text == "Hello" || PasswordTextBox.Text != "World") {
-        MessageBox.Show("Incorrect password", "Incorrect Password", MessageBoxButtons.OK, MessageBoxIcon.Error);
+      } else {
+        MessageBox.Show("Invalid username or password.", "Invalid credentials", MessageBoxButtons.OK, MessageBoxIcon.Error);
       }
     }
 
     private void ClearBtn_Click(object sender, EventArgs e) {
-      usernameTextBox.Text = "";
-      PasswordTextBox.Text = "";
+      UsernameTextBox.Clear();
+      PasswordTextBox.Clear();
+    }
+
+    private bool isValidUser(string username, string password) {
+      foreach (UserCredentials user in users) {
+        if (user.Username == username && user.Password == password) return true;
+      }
+      return false;
     }
   }
 }

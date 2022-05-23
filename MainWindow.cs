@@ -10,12 +10,28 @@ using System.Windows.Forms;
 
 namespace GRP11_Castro_Jocson_LE2 {
   public partial class MainWindow : Form {
+    public string Username {
+      get {
+        return UsernameTextBox.Text;
+      }
+      set {
+        UsernameTextBox.Text = value;
+      }
+    }
+
+    Timer timer;
     String regionEntry;
     int recordNumber, casesNumber;
     DataTable tableSource = new DataTable();
 
     public MainWindow() {
       InitializeComponent();
+
+      CurrentTimeTextBox.Text = DateTime.Now.ToString("h:mm:ss tt");
+      timer = new Timer();
+      timer.Interval = 1000;
+      timer.Tick += UpdateTime;
+      timer.Start();
     }
 
     private void Form2_Load(object sender, EventArgs e) {
@@ -70,6 +86,9 @@ namespace GRP11_Castro_Jocson_LE2 {
       MessageBox.Show("Record has been successfully deleted!", "Delete successful", MessageBoxButtons.OK);
       ClearFields();
     }
+    private void UpdateTime(object sender, EventArgs e) {
+      CurrentTimeTextBox.Text = DateTime.Now.ToString("h:mm:ss tt");
+    }
 
     private void ClearFields() {
       RecordNumberTextBox.Clear();
@@ -77,5 +96,4 @@ namespace GRP11_Castro_Jocson_LE2 {
       NumberOfCasesTextBox.Clear();
     }
   }
-
 }

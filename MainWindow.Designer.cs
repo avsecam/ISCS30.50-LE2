@@ -170,6 +170,7 @@ namespace GRP11_Castro_Jocson_LE2
       // 
       this.UsernameTextBox.Location = new System.Drawing.Point(211, 21);
       this.UsernameTextBox.Name = "UsernameTextBox";
+      this.UsernameTextBox.ReadOnly = true;
       this.UsernameTextBox.Size = new System.Drawing.Size(147, 20);
       this.UsernameTextBox.TabIndex = 3;
       // 
@@ -186,10 +187,11 @@ namespace GRP11_Castro_Jocson_LE2
       // 
       this.CurrentTimeTextBox.Location = new System.Drawing.Point(517, 21);
       this.CurrentTimeTextBox.Name = "CurrentTimeTextBox";
+      this.CurrentTimeTextBox.ReadOnly = true;
       this.CurrentTimeTextBox.Size = new System.Drawing.Size(147, 20);
       this.CurrentTimeTextBox.TabIndex = 3;
       // 
-      // Form2
+      // MainWindow
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -202,7 +204,7 @@ namespace GRP11_Castro_Jocson_LE2
       this.Controls.Add(this.CurrentTimeLabel);
       this.Controls.Add(this.UsernameTextBox);
       this.Controls.Add(this.UsernameLabel);
-      this.Name = "Form2";
+      this.Name = "MainWindow";
       this.Text = "Main Window";
       this.Load += new System.EventHandler(this.Form2_Load);
       this.groupBox1.ResumeLayout(false);
