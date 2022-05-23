@@ -59,7 +59,6 @@ namespace GRP11_Castro_Jocson_LE2 {
       this.usernameTextBox.Name = "usernameTextBox";
       this.usernameTextBox.Size = new System.Drawing.Size(163, 20);
       this.usernameTextBox.TabIndex = 2;
-      this.usernameTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
       // 
       // PasswordTextBox
       // 
@@ -68,7 +67,6 @@ namespace GRP11_Castro_Jocson_LE2 {
       this.PasswordTextBox.PasswordChar = '*';
       this.PasswordTextBox.Size = new System.Drawing.Size(163, 20);
       this.PasswordTextBox.TabIndex = 3;
-      this.PasswordTextBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
       // 
       // LogInBtn
       // 
@@ -109,7 +107,7 @@ namespace GRP11_Castro_Jocson_LE2 {
       this.PasswordsLabel.TabIndex = 7;
       this.PasswordsLabel.Text = "Password: World";
       // 
-      // Form1
+      // LogInForm
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -123,7 +121,7 @@ namespace GRP11_Castro_Jocson_LE2 {
       this.Controls.Add(this.usernameTextBox);
       this.Controls.Add(this.PasswordLabel);
       this.Controls.Add(this.UsernameLabel);
-      this.Name = "Form1";
+      this.Name = "LogInForm";
       this.Text = "Log In Window";
       this.ResumeLayout(false);
       this.PerformLayout();
