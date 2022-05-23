@@ -43,6 +43,7 @@ namespace GRP11_Castro_Jocson_LE2 {
 
       tableSource.Rows.Add(1, "2", 30);
       tableSource.Rows.Add(2, "8", 50);
+      tableSource.Rows.Add(3, "NCR", 9001);
     }
 
     private void dataGridView1_MouseDoubleClick(object sender, MouseEventArgs e) {
